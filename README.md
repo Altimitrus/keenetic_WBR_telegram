@@ -60,24 +60,10 @@ SSH доступ (для температуры CPU)
 bash
 pip install -r requirements.txt
 3. Настройка конфигурации
-Создайте файл .env на основе примера:
+Создайте файл .env на основе примера из файлов в репозитории 
 
-env
-# Данные роутера
-WIFI_HOST=http://192.168.195.1       # IP адрес роутера
-WIFI_LOGIN=admin                     # Логин администратора
-WIFI_PASSWORD=your_password          # Пароль администратора
 
-# SSH доступ (для получения температуры)
-SSH_HOST=192.168.195.1               # IP роутера для SSH
-SSH_PORT=222                         # Порт SSH (обычно 222)
-SSH_USER=root                        # Пользователь SSH
-SSH_PASS=your_ssh_password           # Пароль SSH
-
-# Telegram
-TG_BOT_TOKEN=your_bot_token          # Токен от @BotFather
-ALLOWED_USERS=123456789,987654321    # ID пользователей через запятую
-4. Получение Telegram ID
+4. Получение свой Telegram ID администратора
 Найдите в Telegram бота @userinfobot
 
 Отправьте ему команду /start
